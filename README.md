@@ -78,7 +78,7 @@ ONBOARDING-USER/
             password: ''
         } 
   ```  
- There are different ways to set the variable using Cypress: * [Environment Variables](https://docs.cypress.io/guides/guides/environment-variables#Setting)
+ There are different ways to set the variable using Cypress: [Environment Variables](https://docs.cypress.io/guides/guides/environment-variables#Setting)
         
  3. Open Terminal
     - Execute - npm install
@@ -93,7 +93,7 @@ From the project root folder, run the command below to get local results:
   ```
   npm run cypress:run (chrome)
   ```
-To run tests showing the browser execution proceed with the command below.
+* Run Tests showing the browser execution:
   ```
   npm run cypress:run:headed
   ```
