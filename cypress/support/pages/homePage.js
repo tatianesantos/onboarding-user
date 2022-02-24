@@ -1,11 +1,10 @@
-const el = {
-    signInHomePageButton: '.main-nav__item.main-nav__item--persistent'
-}
-
 class HomePage {
+    constructor(){
+        this.signInHomePageButton = '.main-nav__item.main-nav__item--persistent'
+    }
 
     clickSignInButton(){
-        cy.get(el.signInHomePageButton).children('a').click();
+        cy.get(this.signInHomePageButton).children('a').click();
     }    
 
 }

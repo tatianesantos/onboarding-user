@@ -1,16 +1,15 @@
-const el = {
-    resetPasswordButton: 'button[class="sc-hiwReK sc-clIAKW fIlSWa dDlHlP Button"]',
-    signInForgotPageButton: 'a[class="sc-bTfYlY hRcZTQ sc-FuCfd kBVIbD"'
-}
-
 class ForgotPasswordPage {
+    constructor(){
+        this.resetPasswordButton = 'button[class="sc-hiwReK sc-clIAKW fIlSWa dDlHlP Button"]',
+        this.signInForgotPageButton = 'a[class="sc-bTfYlY hRcZTQ sc-FuCfd kBVIbD"'
+    }
 
     clickSignInButton(){
-        cy.get(el.signInForgotPageButton).click();
+        cy.get(this.signInForgotPageButton).click();
     }    
 
     checkResetButton(){
-        cy.get(el.signUpButton).should('be.visible');
+        cy.get(this.signUpButton).should('be.visible');
     } 
 }
 
